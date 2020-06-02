@@ -39,6 +39,7 @@ aside a {
   letter-spacing: 0.05rem;
   padding: 0.5rem 0;
   color: rgba(94, 43, 43, 0.6);
+  margin-top: 1rem;
 }
 
 aside a:hover {
@@ -59,7 +60,7 @@ section {
 }
 
 section h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   color: #007bff;
 }
@@ -78,15 +79,31 @@ section button {
   border-radius: 20px;
   border: 0;
 }
-/*{
-  padding: 8px 15px;
-  min-width: 140px;
-  border: 0;
-  outline: 0;
-  color: #fff;
+
+#contact h3 {
+  margin: 30px;
+}
+
+#contact a {
+  font-size: 25px;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  color: #5ca2ec;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  background: #007bff;
-}*/
+  border-radius: 50%;
+  border-style: solid;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+}
+
+#contact a:hover {
+  background-color: black;
+  color: whitesmoke;
+}
 
 .skillbox {
   width: 40%;
@@ -127,40 +144,10 @@ section button {
   height: 10px;
 }
 
-#media h3 {
-  margin: 20px;
+#skills h2 {
+  margin-top: 2rem;
 }
 
-#media a {
-  font-size: 25px;
-  display: inline-flex;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  color: #5ca2ec;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border-style: solid;
-  margin-bottom: 20px;
+#hobbies h2 {
+  margin-top: 2rem;
 }
-
-#contact h3 {
-  margin: 50px;
-}
-
-#contact a {
-  padding: 10px;
-  cursor: pointer;
-  color: #5ca2ec;
-  border-radius: 50%;
-  border-style: solid;
-  margin-bottom: 20px;
-}
-
-/*.contact a:hover {
-  background-color: black;
-  color: whitesmoke;
-  width: 50%;
-}*/
