@@ -12,13 +12,21 @@
     <title>My Portfolio</title>
   </head>
   <body>
+
+    <div id="slidebar">
+      <div class="toggle-btn" onclick="toggleSlidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
     <aside>
       <div class="heading">
         <h1>Hi.,I am Tabu.J</h1>
       </div>
 
       <a href="#about">
-        <img src="image/portfolio.jpg" height="100px" width="100px" />
+        <img src="image/img.jpg" height="150px" width="150px" />
       </a>
 
       <div class="headline">
@@ -31,7 +39,8 @@
         <a href="#skills">Software Skills</a>
         <a href="#hobbies">Hobbies</a>
       </nav>
-    </aside>
+      </aside>
+  
 
     <section id="about">
       <div class="container 1">
@@ -169,5 +178,11 @@
         <button>Back</button>
       </div>
     </section>
+
+    <script>
+      function toggleSlidebar(){
+        document.getElementById("slidebar").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

@@ -1,14 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
   transition: 0.8s;
 }
 
 html {
-  /*for smooth scrolling effect*/
   scroll-behavior: smooth;
 }
+
+/*#slidebar {
+  position: fixed;
+  top: 0;
+  width: 17rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #007bff;
+}*/
 
 aside {
   position: fixed;
@@ -46,6 +60,21 @@ aside a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
+.toggle-btn {
+  top: 20px;
+  left: 8rem;
+  position: absolute;
+}
+
+.toggle-btn span {
+  width: 35px;
+  height: 5px;
+  background: black;
+  margin-top: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
 .container {
   margin: auto;
   margin-left: 17rem;
@@ -70,20 +99,21 @@ section h3 {
 }
 
 section button {
-  margin: 20px;
-  width: 80px;
-  height: 5vh;
-  color: #fff;
-  font-size: 15px;
-  background-color: #007bff;
-  border-radius: 20px;
+  padding: 8px 15px;
+  min-width: 140px;
   border: 0;
+  outline: 0;
+  color: #fff;
+  background: #007bff;
 }
-
+section button:hover {
+  background-color: aqua;
+  color: #000;
+  transition: 2s;
+}
 #contact h3 {
   margin: 30px;
 }
-
 #contact a {
   font-size: 25px;
   display: inline-flex;
@@ -106,7 +136,7 @@ section button {
 }
 
 .skillbox {
-  width: 40%;
+  width: 50%;
   left: 10%;
   margin: 50px;
   padding: 0;
@@ -150,4 +180,29 @@ section button {
 
 #hobbies h2 {
   margin-top: 2rem;
+}
+
+@media (max-width: 780) {
+  #slidebar {
+    width: 12rem;
+    height: 100%;
+    left: -12rem;
+  }
+
+  section h1 {
+    font-size: 2.5rem;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .toggle-btn {
+    left: 12.5rem;
+  }
+  .toggle-btn span {
+    display: block;
+  }
+
+  #slidebar.active {
+    left: 0;
+  }
 }
