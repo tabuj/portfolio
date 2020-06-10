@@ -12,26 +12,23 @@
     <title>My Portfolio</title>
   </head>
   <body>
-
     <div id="slidebar">
       <div class="toggle-btn" onclick="toggleSlidebar()">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    
-    <aside>
-      <div class="heading">
-        <h1>Hi.,I am Tabu.J</h1>
-      </div>
+
+      <h1 class="lg-heading">
+        Hi!I am
+        <span class="sm-heading">TABU J</span>
+      </h1>
 
       <a href="#about">
         <img src="image/img.jpg" height="150px" width="150px" />
       </a>
 
-      <div class="headline">
-        <h2>Front-end Web Developer</h2>
-      </div>
+      <h2>Front-end Web Developer</h2>
 
       <nav>
         <a href="#about">About</a>
@@ -39,8 +36,7 @@
         <a href="#skills">Software Skills</a>
         <a href="#hobbies">Hobbies</a>
       </nav>
-      </aside>
-  
+    </div>
 
     <section id="about">
       <div class="container 1">
@@ -179,8 +175,18 @@
       </div>
     </section>
 
+    <div class="copy">
+      <small
+        ><marquee
+          ><i
+            >&copy;copyright june 2020 by Tabu.J, All rights reserved.</i
+          ></marquee
+        ></small
+      >
+    </div>
+
     <script>
-      function toggleSlidebar(){
+      function toggleSlidebar() {
         document.getElementById("slidebar").classList.toggle("active");
       }
     </script>

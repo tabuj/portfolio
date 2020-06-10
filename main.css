@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*#slidebar {
+#slidebar {
   position: fixed;
   top: 0;
   width: 17rem;
@@ -22,29 +22,25 @@ html {
   flex-direction: column;
   align-items: center;
   background: #007bff;
-}*/
+  z-index: 1;
+}
 
-aside {
-  position: fixed;
-  top: 0;
-  width: 17rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.lg-heading {
+  font-size: 2rem;
+  font-family: "Segoe UI";
+}
+
+.sm-heading {
+  color: mediumblue;
+  font-style: oblique;
   text-align: center;
-  background: #007bff;
+  font-family: Tahoma;
 }
 
-aside img {
-  widows: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  border: 10px solid #5ca2ec;
+#slidebar h2 {
+  text-align: center;
 }
-
-aside a {
+#slidebar a {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -52,11 +48,19 @@ aside a {
   font-weight: bold;
   letter-spacing: 0.05rem;
   padding: 0.5rem 0;
-  color: rgba(94, 43, 43, 0.6);
-  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-aside a:hover {
+#slidebar img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 10px solid #5ca2ec;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#slidebar a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -136,7 +140,7 @@ section button:hover {
 }
 
 .skillbox {
-  width: 50%;
+  width: 70%;
   left: 10%;
   margin: 50px;
   padding: 0;
@@ -181,14 +185,29 @@ section button:hover {
 #hobbies h2 {
   margin-top: 2rem;
 }
+.copy {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  overflow: hidden;
+}
 
-@media (max-width: 780) {
+.copy small {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 0 5px;
+}
+
+@media (max-width: 780px) {
   #slidebar {
     width: 12rem;
     height: 100%;
     left: -12rem;
   }
-
+  #slidebar h1 {
+    text-align: center;
+  }
   section h1 {
     font-size: 2.5rem;
   }
@@ -204,5 +223,11 @@ section button:hover {
 
   #slidebar.active {
     left: 0;
+  }
+  .copy {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1rem;
   }
 }
